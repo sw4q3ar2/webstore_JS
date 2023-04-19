@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* Opcionális, középre igazítás */
+}
+
+.card {
+  border: 2px groove beige;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+h1 {
+  background-image: url("kep/csmoney.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 30px 0;
+}
+
+footer {
+  text-align: center;
+}
+
+.view {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+}
+
+.blur {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(3px);
+  z-index: 9988;
+  background-color: rgba(0, 0, 0, 0.25);
+  left: 0;
+  top: 0;
+}
+
+.kepNez {
+  margin: 0px 15px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.bal {
+  position: absolute;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  width: 60px;
+  height: 100%;
+  border: 0;
+  transition: 0.15s ease-in-out transform;
+  cursor: pointer;
+  left: 0px
+}
+
+.jobb {
+  position: absolute;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  width: 60px;
+  height: 100%;
+  border: 0;
+  transition: 0.15s ease-in-out transform;
+  cursor: pointer;
+  right: 0px
+}
+
+.bal:hover, .jobb:hover{
+  transform: scale(1.02);
+}
+
+.exit{
+  position: absolute;
+  top: -90px;
+  right: 4px;
+  background: #2b141499;
+  width: 48px;
+  height: 47px;
+  border: 2px solid white;
+  color: white;
+  border-radius: 50px;
+}
+
+.exit:hover{
+  transform: scale(.9);
+}
+
